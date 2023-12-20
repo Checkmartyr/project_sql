@@ -76,7 +76,7 @@
     <div class="main_containers">
         <form class="form-containe" id="f1" action="/edit/<%= did._id %>" method="post">
             <div >
-                <img src="<%=did.filePath %>"  alt="..." >
+                <img src="<%=did.filePath %>"  alt="..." style = "max-width: 600px ;height: auto;"> >
                 <!-- <p class="titleimg"><%= did.title %></p> -->
             </div>
             <div class="upload_detail_container">
@@ -110,11 +110,11 @@
                         <ion-icon name="mail-outline" ></ion-icon>
                     </span>
                 </div>
-                <div class="box_input">
+                <!-- <div class="box_input">
                     <label>category</label>
                     <input type="category" name="category"  value="<%= did.category %>">
                     
-                </div>
+                </div> -->
               
                 <button type="button" onclick="submitForm()" id="btn-submit">submit</button>
                 <button type="button" onclick="DeleteFrom()" id="btn-delete">Delete</button>
